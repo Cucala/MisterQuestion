@@ -5,7 +5,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="69.0" layoutY="178.0" text="A" />
@@ -13,14 +12,16 @@
       <Label layoutX="65.0" layoutY="287.0" text="C" />
       <Label layoutX="35.0" layoutY="335.0" text="Valor" />
       <Label layoutX="49.0" layoutY="93.0" text="Pregunta" />
-      <Label layoutX="216.0" layoutY="50.0" text="Añadir una pregunta y sus respuestas" />
+      <Label layoutX="91.0" layoutY="38.0" text="Añadir una pregunta y sus respuestas" />
       <Label layoutX="46.0" layoutY="147.0" text="Respuesta" />
-      <TextField layoutX="142.0" layoutY="89.0" />
-      <TextField layoutX="142.0" layoutY="174.0" />
-      <TextField layoutX="142.0" layoutY="224.0" />
-      <TextField layoutX="141.0" layoutY="283.0" />
+      <TextField fx:id="textFieldQuestion" layoutX="142.0" layoutY="89.0" />
+      <TextField fx:id="textFieldAnswerA" layoutX="142.0" layoutY="174.0" />
+      <TextField fx:id="textFieldAnswerB" layoutX="142.0" layoutY="224.0" />
+      <TextField fx:id="textFieldAnswerC" layoutX="141.0" layoutY="283.0" />
       <Button layoutX="518.0" layoutY="331.0" mnemonicParsing="false" text="Cancelar" />
-      <Button layoutX="427.0" layoutY="331.0" mnemonicParsing="false" text="Guardar" />
-      <TextField layoutX="141.0" layoutY="331.0" />
+      <Button layoutX="427.0" layoutY="331.0" mnemonicParsing="false" onAction="#collectQuestions" text="Guardar" />
+      <TextField fx:id="textFieldValue" layoutX="141.0" layoutY="331.0" />
+      <Label layoutX="445.0" layoutY="114.0" text="Respuesta correcta:" />
+      <TextField fx:id="textFieldCorrectAnswer" layoutX="473.0" layoutY="151.0" prefHeight="25.0" prefWidth="48.0" />
    </children>
 </AnchorPane>

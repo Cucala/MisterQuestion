@@ -14,8 +14,8 @@ public class MisterQuestionApplication extends Application {
     public void start(Stage stage) throws IOException {
         window = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(MisterQuestionApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Mister Question");
         stage.setScene(scene);
         stage.show();
     }

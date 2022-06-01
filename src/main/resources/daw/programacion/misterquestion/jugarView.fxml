@@ -4,14 +4,15 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="daw.programacion.misterquestion.JugarView">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="183.0" layoutY="68.0" text="Seleccione la opcion correcta de la pregunta" />
       <Label layoutX="106.0" layoutY="132.0" text="Pregunta" />
-      <ComboBox layoutX="202.0" layoutY="175.0" prefWidth="150.0" />
+      <ComboBox fx:id="comBoxAnswers" layoutX="202.0" layoutY="175.0" prefWidth="150.0" />
       <Button layoutX="176.0" layoutY="314.0" mnemonicParsing="false" text="Ni idea" />
       <Button layoutX="443.0" layoutY="314.0" mnemonicParsing="false" text="Estoy seguro" />
+      <Text fx:id="textShowQuestion" layoutX="191.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
    </children>
 </AnchorPane>

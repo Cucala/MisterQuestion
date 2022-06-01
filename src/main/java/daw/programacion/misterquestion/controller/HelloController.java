@@ -20,4 +20,14 @@ public class HelloController {
         MisterQuestionApplication.window.setScene(scene);
         MisterQuestionApplication.window.show();
     }
+    @FXML
+    protected void goToPlay() throws IOException {
+        FXMLLoader loader = new FXMLLoader(MisterQuestionApplication.class.getResource("jugarView.fxml"));
+        PlayController controller = new PlayController();
+        loader.setController(controller);
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        MisterQuestionApplication.window.setScene(scene);
+        MisterQuestionApplication.window.show();
+    }
 }

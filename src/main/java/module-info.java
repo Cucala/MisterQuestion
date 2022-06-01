@@ -1,6 +1,7 @@
 module daw.programacion.misterquestion {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     opens daw.programacion.misterquestion to javafx.fxml;
